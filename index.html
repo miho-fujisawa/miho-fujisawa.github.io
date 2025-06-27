@@ -14,17 +14,21 @@
     body {
       margin: 0;
       padding: 0;
-      background: #ffffff;
+      background-color: #ffffff;
       color: #000000;
     }
+
     header {
       background: #ffffff;
       color: #000000;
-      padding: 50px 20px;
+      padding: 10px 15px;
       text-align: center;
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      border-bottom-left-radius: 30px;
-      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    header h1 {
+      font-size: 2.5em;
     }
     nav {
       margin-top: 20px;
@@ -48,23 +52,18 @@
       border-radius: 20px;
       box-shadow: 0 6px 12px rgba(0,0,0,0.08);
     }
-    h1, h2, h3 {
+    h1, h2 {
       text-align: center;
       margin-bottom: 20px;
+    }
+    h3 {
+      text-align: left;
+      margin-top: 40px;
     }
     .intro {
       text-align: center;
       font-size: 1.2em;
       margin-bottom: 40px;
-    }
-    .profile-photo {
-      display: block;
-      margin: 20px auto;
-      border-radius: 50%;
-      width: 240px;
-      height: 240px;
-      object-fit: cover;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
     .audio-sample {
       margin: 30px 0;
@@ -108,40 +107,150 @@
         padding: 20px 15px;
       }
     }
+    .subtitle {
+  　　　font-size: 1.2em;
+ 　　　 margin-top: 10px;
+ 　　　 margin-bottom: 20px;
+  　　　color: #555;
+　　 }
+
+     footer {
+       background: #ffffff;
+       color: #000000;
+       text-align: center;
+       padding: 10px;
+       margin: 40px auto 0 auto;
+       font-size: 0.9em;
+       border-top: 1px solid #ddd;
+       width: fit-content;
+    }
+
+   .profile-image {
+       display: block;
+       width: 300px;
+       max-width: 90%;
+       height: auto;
+       margin: 30px auto;
+       border-radius: 0px;
+       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  .full-width-image {
+       width: 100vw;
+       max-width: 100%;
+       height: auto;
+       display: block;
+       margin: 0;
+    }
+  .full-width-banner {
+       display: block;
+       width: 100vw;
+       max-width: 100%;
+       height: auto;
+       margin: 0;
+       border-radius: 0;
+    }
+
   </style>
 </head>
 <body>
 
 <header>
-  <h1>ふじみ Official Website</h1>
+  <h1>藤沢実穂 Official Website</h1>
+  <p class="subtitle">ナレーター・声優・俳優</p>
+  <div style="height: 20px;"></div>
   <nav>
     <a href="#profile">プロフィール</a>
+    <a href="#history">お仕事の履歴</a>
     <a href="#samples">作品紹介</a>
     <a href="#contact">お問い合わせ</a>
   </nav>
 </header>
+  
+<img src="header-banner.jpg" alt="バナー画像" class="full-width-image" />
 
 <section id="top">
-  <h2>「あなたのココロのスキマ　私の声でお埋めします」</h2>
+  <h2>「あなたのココロのスキマ　ワタシの声でお埋めします」</h2>
   <p class="intro">CM・企業VP・ドキュメンタリー・教材ナレーションなど幅広く対応しています。</p>
 </section>
 
 <section id="profile">
   <h2>プロフィール</h2>
-  <img src="my-photo.jpg" alt="ふじみさんのプロフィール写真" class="profile-photo" />
-  <p>ナレーター歴○年。柔らかく落ち着いた声質を活かし、企業VP・CM・Web動画・教材ナレーションなど多数担当。</p>
+  <img src="profile.jpg" alt="プロフィール写真" class="profile-image" />
+  <p>
+    テレビCM・ラジオCM・オーディオブック・ゲーム・舞台など、幅広いジャンルで活動する声優・ナレーター
+  </p>
+  <p>
+    温かみのある語りから、芯のあるトーン、情感豊かなセリフまで<br>
+    聴き手に自然と届く「伝わる声」を大切にしています
+  </p>
+  <p>
+    CMやゲーム、オーディオブックへの出演のほか、各地での舞台公演にも多数参加
+  </p>
+  <p>
+    表現者としての経験を活かし、声で空気を伝えるナレーションをお届けします
+  </p>
+</section>
 
-  <h3>使用機材</h3>
+
+</section>
+
+<section id="history">
+  <h2>お仕事の履歴</h2>
+  <h3>🎙 ナレーション</h3>
   <ul>
-    <li>マイク：○○○</li>
-    <li>オーディオインターフェース：○○○</li>
-    <li>録音環境：防音ブース完備</li>
+    <li>ニトリ（TVCM）</li>
+    <li>アクリア（TVCM）</li>
+    <li>ヤーマン（R-CM）</li>
+    <li>AGF（R-CM）</li>
+    <li>GEORGIA（R-CM）</li>
+    <li>ユニバーサル・スタジオ・ジャパン（TVCM）</li>
+    <li>キリン 一番搾り（R-CM）</li>
+    <li>雲海酒造 Soba&Soda（R-CM）</li>
+    <li>日本図書普及 図書カード（R-CM）</li>
+    <li>アサヒ ドライゼロ（R-CM）</li>
+    <li>昭和電工（R-CM）</li>
+    <li>その他多数</li>
+
+  </ul>
+  <h3>📚 オーディオブック</h3>
+  <ul>
+    <li>「レンタルロボット」 著者：滝井幸代</li>
+  </ul>
+  <h3>🎬 外画（吹き替え）</h3>
+  <ul>
+    <li>INDEMNITY</li>
+    <li>2048</li>
+  </ul>
+  <h3>🎮 ゲーム</h3>
+  <ul>
+    <li>雨魂 – AMEDAMA -『ねはん』役（Steam）</li>
+    <li>龍が如く 維新！極『山本八重』役（PS4/PS5 他）</li>
+    <li>LOST JUDGMENT：裁かれざる記憶 DLC「海藤正治の事件簿」（PS4/PS5 他）</li>
+    <li>龍が如くONLINE『タツ姐』役（PC/スマートフォン）</li>
+    <li>龍が如く0（PS4）</li>
+    <li>ECHO OF SOUL（PC）</li>
+    <li>My9Swallows TOPSTARS LEAGUE「母親役」ほか</li>
+  </ul>
+  <h3>🎪 舞台出演</h3>
+  <ul>
+    <li>「Tower of Sugar」 2009年7月23日～26日 @全労済ホール/スペース・ゼロ</li>
+    <li>「うたかふぇ」2012〜2013年 東京/仙台</li>
+    <li>「フナバシ TOYS」2013年 東京/仙台</li>
+    <li>「NO SURPRISE,NO LIFE!」2014年 東京/仙台</li>
+    <li>「NICE EIJI!～父まるだし～」2015年 東京/横浜/仙台</li>
+    <li>「うたかふぇ」2015年 サンシャイン劇場</li>
+    <li>「バカの王様〜the KING of BAKA〜」2015年 東京/仙台</li>
+    <li>「玉夢温泉・星影楼にまつわる噺〜その壱〜」2016年 東京/仙台</li>
+    <li>「SOULFUL SOUL」2017年 APOCシアター</li>
+    <li>「さいごのなみだ〜星影楼にまつわる噺 その弐〜」2018年 東京/仙台</li>
+    <li>「結婚のススメ～NO SURPRISE,NO LIFE～」2019年 東京/大阪/名古屋</li>
+    <li>その他多数</li>
+
   </ul>
 </section>
 
 <section id="samples">
   <h2>作品紹介</h2>
-
   <div class="audio-sample">
     <h3>CMナレーション</h3>
     <audio controls>
@@ -149,7 +258,6 @@
       お使いのブラウザはaudioタグに対応していません。
     </audio>
   </div>
-
   <div class="audio-sample">
     <h3>企業VP</h3>
     <audio controls>
@@ -157,7 +265,6 @@
       お使いのブラウザはaudioタグに対応していません。
     </audio>
   </div>
-
   <div class="audio-sample">
     <h3>教材ナレーション</h3>
     <audio controls>
@@ -171,17 +278,20 @@
   <h2>お問い合わせ</h2>
   <p>お仕事のご依頼・ご相談は下記よりお気軽にご連絡ください。</p>
   <ul>
-    <li>📧 メールアドレス：<a href="mailto:yourmail@example.com" class="email">yourmail@example.com</a></li>
+    <li>📧 メールアドレス：<a href="mailto:miho.fujisawa.official@gmail.com" class="email">miho.fujisawa.official@gmail.com</a></li>
     <li>📱 SNS：
-      <a href="https://twitter.com/yourname" target="_blank" class="sns">Twitter</a> /
-      <a href="https://instagram.com/yourname" target="_blank" class="sns">Instagram</a>
+      <a href="https://x.com/fujippoo" target="_blank" class="sns">X</a> /
+      <a href="https://www.instagram.com/miho0815fujisawa/" target="_blank" class="sns">Instagram</a>
     </li>
   </ul>
 </section>
+  
+<img src="footer-banner.jpg" alt="フッター上の画像" class="full-width-banner" />
 
 <footer>
-  <p>&copy; 2025 ふじみ All Rights Reserved.</p>
+  <p>&copy; 2025 Miho Fujisawa All Rights Reserved.</p>
 </footer>
+
 
 </body>
 </html>
