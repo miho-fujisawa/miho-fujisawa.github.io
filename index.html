@@ -233,7 +233,35 @@
   color: #000000;
 }
 
+/* 動画セクション */
+#video {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
 
+#video h2 {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
 
   </style>
 </head>
@@ -269,6 +297,16 @@
   </ul>
 </section>
 
+<section id="video">
+  <h2>動画</h2>
+
+  <div class="video-container">
+    <video controls playsinline preload="metadata">
+      <source src="news-video.mp4" type="video/mp4">
+      お使いのブラウザでは動画を再生できません。
+    </video>
+  </div>
+</section>  
 
 <section id="profile">
   <h2>プロフィール</h2>
