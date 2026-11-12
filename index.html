@@ -230,26 +230,31 @@
 }
 
     
+
 /* ９つの動画ギャラリー */
 #video-gallery {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 30px;
+  width: calc(100% - 80px);
+  max-width: 1400px;
+  margin: 90px auto;
+  padding: 70px 65px;
   background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
 }
 
 #video-gallery h2 {
-  font-size: 1.8em;
+  font-size: 2em;
+  font-weight: normal;
+  letter-spacing: 0.12em;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 55px;
 }
 
 .video-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  column-gap: 35px;
+  row-gap: 45px;
 }
 
 .video-item {
@@ -262,26 +267,38 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
-  border-radius: 10px;
+  border-radius: 3px;
   background: #000;
 }
 
-.video-item p {
-  text-align: center;
-  font-size: 0.95em;
-  margin-top: 10px;
+/* タブレット */
+@media (max-width: 900px) {
+  #video-gallery {
+    width: calc(100% - 40px);
+    padding: 45px 30px;
+  }
+
+  .video-grid {
+    gap: 25px;
+  }
 }
 
-/* スマートフォン対応 */
+/* スマートフォン */
 @media (max-width: 600px) {
   #video-gallery {
-    margin: 20px 10px;
-    padding: 20px 15px;
+    width: calc(100% - 20px);
+    margin: 40px auto;
+    padding: 35px 18px;
+  }
+
+  #video-gallery h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
   }
 
   .video-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 20px 12px;
   }
 }
 
